@@ -1,0 +1,124 @@
+*{
+    font-family: 'Ubuntu', sans-serif;
+}
+.no-other-world{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+   
+}
+.naslov h2
+{
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  
+  position: relative;
+  color: black;
+  text-align: center;
+}
+
+.wrld-logo{
+    margin-top: 20px;
+    width: 220px;
+    height: 150px;
+    
+}
+h3{
+    margin-top: 30px;
+    font-size: 24px;
+}
+p{
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 16px;
+}
+.znaminja{
+    margin-top: 30px;
+    height: 160px;
+   
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 60px;
+    grid-row-gap: 90px;
+    align-items: center;
+    text-align: center;
+}
+.slika{
+    height: 60px;
+    width: 120px;
+    margin: 15px;
+}
+.z1{
+    height: 50px;
+    width: 100px;
+  
+}
+
+.cel{
+    margin-top: 150px;
+    width: 800px;
+    font-weight: 700;
+    text-align: center;
+}
+.posteri{
+        display: grid;
+        grid-template-columns: auto auto ;
+        grid-column-gap: 50px;
+        margin-bottom: 50px;
+        align-items: center;
+        text-align: center;
+}
+
+
+.sliki{
+    height: 200px;
+    max-width: 100px;
+    margin: 50px;
+    margin-bottom: 120px;
+}
+@media screen and (max-width:991px) {
+    .naslov h2{
+        font-size: 28px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    p{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:768px) {
+    .naslov h2{
+        font-size: 24px;
+    }
+    h3{
+        font-size: 16px;
+    }
+    p{
+        font-size: 10px;
+    }
+    
+    .cel{
+        max-width: 300px;
+        font-weight: bold;
+
+    }
+   
+   
+    
+}
+@media screen and (max-width:500px)
+{
+    .znaminja{
+        grid-template-columns: auto auto;
+        grid-row-gap: 60px;
+    }
+    .posteri{
+        grid-template-columns: auto;
+        grid-row-gap: 30px;
+    }
+}

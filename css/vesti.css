@@ -1,0 +1,130 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+.vesti
+{
+  background-color: #fff;
+  min-height: 80vh;
+  width: auto;
+}
+.naslov h2
+{
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  padding-top: 40px;
+  position: relative;
+  color: #47b2e4;
+  text-align: center;
+}
+.naslov h2::before
+{
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background-color: #141414;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+.naslov h2::after
+{
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background-color: #47b2e4;
+  bottom: 0.5px;
+  left: calc(50% - 20px);
+}
+::after,::before
+{
+  box-sizing: border-box;
+}
+.blog-section
+{
+  width: auto;
+}
+.blog-section .section-content
+{
+  width: 85%;
+  margin: 20px auto;
+}
+.blog-section .section-content .cards
+{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+  margin: 25px auto;
+}
+.blog-section .section-content .cards .card
+{
+  width: 100%;
+  background-color: #f3f5fa;
+  position: relative;
+  border-radius: 10px;
+}
+.blog-section .section-content .cards .card img
+{
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.blog-section .section-content .cards .card .article
+{
+  padding: 15px 20px;
+}
+.blog-section .section-content .cards .card .article h4
+{
+  font-size: 24px;
+  color: #2e2e2e;
+}
+.blog-section .section-content .cards .card .article p
+{
+  font-size: 16px;
+  margin: 10px 0;
+  color: #2e2e2e;
+}
+.blog-section .section-content .cards .card .posted-date
+{
+  font-weight: 600;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  background-color: #47b2e4;
+  padding: 6px 15px;
+  border-radius: 10px;
+}
+.blog-section .section-content .cards .card .posted-date p
+{
+  color: #444444;
+}
+@media screen and (max-width:992px)
+{
+  .blog-section .section-content .cards
+  {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+@media screen and (max-width:768px)
+{
+  .blog-section .section-content .cards
+  {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width:300px)
+{
+  .blog-section .section-content .cards
+  {
+    grid-template-columns: 0.5fr;
+  }
+}

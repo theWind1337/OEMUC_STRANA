@@ -1,0 +1,115 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+.zanas-sec
+{
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.zanas-container
+{
+  width: 100%;
+  padding: 35px 10%;
+}
+.zanas-container
+{
+  padding-right: calc(10% - 30px);
+}
+main.zanas-row
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+}
+.col header.zanas-title
+{
+  
+  background: none;
+  color: #47b2e4;
+  padding: 0px 0px 20px 30px;
+}
+.col .contents
+{
+  padding: 0px 30px;
+  border-left: 2px solid #bababa;
+}
+.col .contents .box
+{
+  position: relative;
+  padding: 20px;
+  border: 1px solid #eaeaea;
+  border-radius: 25px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.4s;
+  margin-bottom: 20px;
+}
+.col .contents .box:hover
+{
+  box-shadow: 0px 3px 12px 0px #ccc;
+  border: 1px solid transparent;
+}
+.col .contents .box::before
+{
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  right: calc(100% + 24px);
+  top: 0;
+  background-color: #fdc345;
+  border: 2px solid white;
+}
+.box h4
+{
+  position: relative;
+  color: #47b2e4;
+}
+.box h3
+{
+  font-size: 19px;
+  padding: 10px 0px 6px;
+ 
+  color: #444;
+}
+.box p
+{
+  line-height: 1.2;
+  color: #666;
+  font-size: 17px;
+}
+.mob-zanas-container{
+  display: none;
+
+}
+.mob-zanas-container
+{
+  width: 100%;
+  padding: 35px 10%;
+}
+.mob-zanas-container
+{
+  padding-right: calc(10% - 30px);
+}
+
+@media screen and (max-width: 768px) {
+  .mob-zanas-container{
+    display: block;
+  }
+  .zanas-container{
+    display: none;
+  }
+  main.zanas-row
+  {
+    grid-template-columns: 1fr;
+  }
+}

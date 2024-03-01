@@ -1,0 +1,129 @@
+*{
+    font-family: 'Ubuntu', sans-serif;
+}
+.kontent4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+.wrld-logo img{
+    margin-top: 20px;
+    width: 220px;
+    height: 150px;
+    
+}
+h2
+{
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  
+  position: relative;
+  color: black;
+  text-align: center;
+}
+h3{
+    margin-top: 30px;
+    font-size: 24px;
+}
+p{
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 16px;
+}
+.znaminja{
+    margin-top: 30px;
+    height: 160px;
+   
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 60px;
+    grid-row-gap: 90px;
+    align-items: center;
+    text-align: center;
+}
+.slika{
+    height: 60px;
+    width: 110px;
+    margin: 15px;
+}
+.z1{
+    height: 50px;
+    width: 100px;
+  
+}
+.cel{
+    margin-top: 150px;
+    width: 800px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.posteri{
+        height: 250px;
+        width: 450px;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-column-gap: 30px;
+        margin-bottom: 150px;
+}
+
+@media screen and (max-width:991px) {
+    h2{
+        font-size: 28px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    p{
+        font-size: 12px;
+    }
+    .cel{
+        width: 700px;
+    }
+ 
+   
+    
+}
+@media screen and (max-width:768px) {
+    h2{
+        font-size: 24px;
+    }
+    
+    .cel{
+        width: 350px;
+    }
+   
+    .posteri{
+        height: 80px;
+        width: 125px;
+        display: grid;
+        grid-template-columns: auto ;
+        grid-row-gap: 60px;
+        margin-bottom: 300px;
+    }
+   
+   
+    
+}
+@media screen and (max-width:500px)
+{
+   h2{
+        font-size: 18px;
+    }
+   .znaminja{
+    grid-template-columns: auto auto;
+    margin-bottom: 80px;
+   }
+   .cel{
+    width: 300px;
+    }
+    .z1{
+        height: 40px;
+        width: 90px;
+      
+    }
+}

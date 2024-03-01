@@ -1,0 +1,152 @@
+*{
+    font-family: 'Ubuntu', sans-serif;
+}
+.kontent-dig{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+h2
+{
+    margin-top: 10px;
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+  color: black;
+  text-align: center;
+}
+h3{
+    margin-top: 30px;
+    font-size: 24px;
+}
+p{
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.tekst1{
+    margin-top: 20px;
+    width: 950px;
+    font-weight: 700;
+    text-align: center;
+    align-items: center;
+    
+    margin-bottom: 50px;
+}
+.ucesnici h3{
+    text-align: center;
+    align-items: center;
+}
+.flags{
+    margin-top: 30px;
+    height: 160px;
+    width: 900px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 60px;
+    grid-row-gap: 90px;
+    align-items: center;
+    text-align: center;
+}
+.flags a
+{
+    text-decoration: none;
+    color: #141414;
+}
+.flags a:hover
+{
+    color: #47b2e4;
+    transition: all 0.3s;
+}
+.z1{
+    height: 50px;
+    width: 100px;
+  
+}
+.cel{
+   
+    margin-top: 200px;
+    width: 900px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+}
+@media screen and (max-width:991px) {
+    h2{
+        font-size: 28px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    p{
+        font-size: 12px;
+    }
+   
+    .tekst1{
+        width: 770px;
+    }
+    .cel{
+        width: 770px;
+    }
+  
+    .flags{
+        width: 770px;
+
+    }
+   
+    
+}
+@media screen and (max-width:768px) {
+    h2{
+        font-size: 24px;
+    }
+    
+    .tekst1{
+        width: 500px;
+    }
+   
+    .cel{
+        width: 500px;
+    }
+    .flags{
+        width: 500px;
+       
+    }
+   
+   
+    
+}
+@media screen and (max-width:500px) {
+    h2{
+        font-size: 22px;
+    }
+    
+    .tekst1{
+        width: 300px;
+    }
+  
+    .cel{
+        width: 300px;
+    }
+    .flags{
+        width: 300px;
+       
+    }
+    .z1{
+        height: 25px;
+        width: 50px;
+      
+    }
+    p{
+        font-size: 10px;
+    }
+   
+   
+    
+}
+
+
